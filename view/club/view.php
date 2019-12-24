@@ -2,8 +2,8 @@
 <table class="table table-bordered mt-3">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Username</th>
+            <th>Club Id</th>
+            <th>Leader Club</th>
             <th>Gender</th>
             <th>Age</th>
             <th>Email</th>

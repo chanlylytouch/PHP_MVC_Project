@@ -29,7 +29,7 @@ $data = array();
         $data['page']='club/detail';
     }
     function delete(&$data){
-        $data_delete = m_delete($_POST);
+        $data_delete = ms_delete($_POST);
         if($data_delete){
             $action = 'view';
         }else{
@@ -39,9 +39,10 @@ $data = array();
     }
     function edit(&$data){
         $data['page'] = 'club/edit';
+        $data['edit_club'] = m_edit_club($_POST);
     }
-    function edit_data(&$data){
-        $result['club_data'] = m_update($_POST);  
+    function data_edit(&$data){
+        $result = m_update($_POST);  
         if($result){
             $action = 'view';
         }else{

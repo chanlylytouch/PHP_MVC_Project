@@ -10,12 +10,12 @@
                     <form action="index2.php?action=add_users" method="post">
                         <div class="form-group">
                             <label>User Name:</label>
-                            <input type="text" name="userName" class="form-control" placeholder="Username">
+                            <input type="text" name="userName" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Gender:</label><br>
-                            <input type="radio" name="gender" value="Male">Male<br> 
-                            <input type="radio" name="gender" value="Female">Female
+                            <input type="radio" value="Male" name="gender">Male <br>
+                            <input type="radio" value="Female" name="gender">Female
                         </div>
                         <div class="form-group">
                             <label>Age:</label>
@@ -28,9 +28,14 @@
                         <div class="form-group">
                             <label>Role:</label>
                             <select class="form-control" name="role">
-                                <option>WEP-2020A</option>
-                                <option>WEP-2020B</option>
-                                <option>SNA-2020</option>
+                                <option disabled>Select Role one..</option>
+                                <option value="Centre Forward" name="role">Centre Forward</option>
+                                <option value="Left MF" name="role">Left MF</option>
+                                <option value="Right MF" name="role">Right MF</option>
+                                <option value="Centre MF" name="role">Centre MF</option>
+                                <option value="Right Fullback" name="role">Right Fullback</option>
+                                <option value="Centre Back" name="role">Centre Back</option>
+                                <option value="GoalKeeper" name="role">GoalKeeper</option>
                             </select>
                         </div>
                         <div class="form-group">

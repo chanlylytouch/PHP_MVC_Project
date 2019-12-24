@@ -19,43 +19,47 @@
                         <h3>Register</h3>
                     </div>
                     <div class="card-body">
-                    <?php
-                    if (isset($data['club_data'])) {
-                        foreach ($data['club_data'] as $result) {
-                            ?>
-                        <form action="index.php?action=edit_data&id=<?php echo $result['clubID']; ?>" method="POST">
+                        <?php
+                            if(isset($data['edit_club'])){
+                                $id = 1;
+                                foreach($data['edit_club'] as $rows){
+                            
+                        ?>
+                        <form action="index.php?action=data_edit&id=<?php echo $rows['clubID']?>" method="POST">
                             <div class="form-group">
-                                <label for="name"><strong>Username:</strong></label>
-                                <input type="text" class="form-control" name="user" value="<?php echo $result['usernamae']?>" >
+                                <label for="name"><strong>Username:</strong></label><?php echo $rows['username']?>
+                                <input type="text" class="form-control" name="username" value="<?php echo $rows['username']?>" placeholder="Username">
                             </div>
                             <div class="form-group">
                                 <label for="name"><strong>Gender:</strong></label><br>
-                                <input type="radio" value="Male" <?php if ($result['gender'] == 'Male') { ?> checked="checked" <?php } ?> name="gender">Male
-                                <input type="radio" value="Female" <?php if ($result['gender'] == 'Female') { ?> checked="checked" <?php } ?> name="gender">Female
+                                <input type="radio" <?php if($rows['gender'] == "Male"){?> checked="checked"<?php }?> value="Male" name="gender">Male
+                                <input type="radio" <?php if($rows['gender'] == "Female"){?> checked="checked"<?php }?> value="Female" name="gender">Female
                             </div>
                             <div class="form-group">
                                 <label for="name"><strong>Age:</strong></label>
-                                <input type="text" class="form-control" name="age" value="<?php echo $result['age']?>" >
+                                <input type="text" class="form-control" name="age" value="<?php echo $rows['age']?>" placeholder="Your Age...">
                             </div>
                             <div class="form-group">
                                 <label for="name"><strong>Email:</strong></label>
-                                <input type="email" class="form-control" name="email" value="<?php echo $result['email']?>" >
+                                <input type="email" class="form-control" name="email" value="<?php echo $rows['email']?>" placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <label for="name"><strong>Name of club:</strong></label>
-                                <input type="text" class="form-control" name="clubName" value="<?php echo $result['clubName']?>" >
+                                <input type="text" class="form-control" name="clubName" value="<?php echo $rows['clubName']?>" placeholder="Your club name">
                             </div>
                             <div class="form-group">
-                                <label for="name"><strong>Desciption:</strong></label>
-                                <input type="text" class="form-control" name="description" value="<?php echo $result['description']?>" >
+                                <label for="name"><strong>Description:</strong></label><br>
+                                <textarea name="description"  cols="65" rows="3" value="<?php echo $rows['description']?>"></textarea>
+                                <!-- <input type="textarea" class="form-control" name="descrip" placeholder="Description"> -->
                             </div>
-                            <input type="submit" name="edit" class="btn btn-primary float-right" value="Create">
-                            <a href="index.php?action=edit" class="btn btn-success">Go Back</a>
+                            <a href="index.php?action=view" class="btn btn-success">Go Back</a>
+                            <input type="submit" class="btn btn-primary float-right" name="edit" value="Edit">
                         </form>
                         <?php
+                            $id++;
+                            }
                         }
-                    }
-                    ?>
+                        ?>
                     </div>
                 </div>
             </div>

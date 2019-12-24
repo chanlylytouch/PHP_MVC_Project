@@ -25,37 +25,39 @@ function m_add($data){
          return $query;
     }
 }
-// function m_detail(){
-//     include 'conection.php';
-//     $id = $_GET['clubID'];
-//     $query = mysqli_query($connection, "SELECT * FROM club WHERE clubID=$id");
-//     return $query;
-// }
-function m_delete(){
+
+function ms_delete()
+{
     include 'conection.php';
     $id = $_GET['id'];
-    $query = mysqli_query($connection,"DELETE FROM club WHERE clubID='$id'");
-    
+    $query = mysqli_query($connection, "DELETE FROM club WHERE clubID='$id'");
+    return $query;
+}
+function m_edit_club(){
+    $id = $_GET['id'];
+    include "conection.php";
+    $query = mysqli_query($connection,"SELECT * FROM club WHERE clubID = '$id'");
     return $query;
 }
 function m_update(){
     include 'conection.php';
     $id = $_GET['id'];
     if(isset($_POST['edit'])){
-        $username = $_POST['user'];
+        $username = $_POST['username'];
         $gender = $_POST['gender'];
         $age = $_POST['age'];
         $email = $_POST['email'];
         $clubName = $_POST['clubName'];
         $description = $_POST['description'];
-        $query = mysqli_query($connection, "UPDATE club SET username='$username',gender='$gender',age='$age',email='$email',clubName='$clubName',description='$description' WHERE clubID=$id");
+        $query = mysqli_query($connection, "UPDATE club SET username='$username',gender='$gender',age='$age',email='$email',clubName='$clubName',description='$description' WHERE clubID='$id'");
         return $query;
+        header("Location: index.php?action=view");
     }
 }
 function m_detail(){
     $id = $_GET['id'];
     include "conection.php";
-    $data = mysqli_query($connection,"SELECT * FROM users WHERE userID = $id");
+    $data = mysqli_query($connection,"SELECT * FROM users WHERE userID = '$id'");
 
     return $data;
 }
