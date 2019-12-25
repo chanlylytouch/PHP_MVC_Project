@@ -1,10 +1,13 @@
-<div class="container">
-    <a href="index.php?action=view"><img src="view/user/img/back1.png" alt="" style="width:50px; height:50px;" class="mt-3 "></a>
+<?php
+    include "dashboard/dasboard.php";
+?>
+&nbsp;
+<div class="container mt-5">
     <a href="index2.php?action=add_form"><img src="view/user/img/user.png" alt="" style="width:50px; height:50px;" class="mt-3 float-right"></a>
-    <h2 class="text-center text-primary">List Of Members</h2>
+    <h1 class="text-center text-primary">List Of Members</h1>
     <div class="row">
         <div class="col-12">
-            <table class="table table-dark table-hover">
+            <table class="table table-dark">
                 <thead>
                     <tr>
                         <th>User Id</th>

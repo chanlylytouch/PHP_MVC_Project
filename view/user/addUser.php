@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group">
                             <label>Description:</label><br>
-                            <input type="text" id="description" name="description" class="form-control">
+                            <textarea name="description" cols="30" rows="3" class="form-control"></textarea>    
                         </div>
                         <a href="index2.php?action=viewUser" class="btn btn-success" id="back">Go Back</a>
                         <input type="submit" class="btn btn-primary float-right" value="Submit" name="add">

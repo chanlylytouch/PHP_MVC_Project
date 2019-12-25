@@ -1,6 +1,9 @@
+<?php
+    include "dashboard/dasboard.php";
+?>
 <h1 class="text-center text-primary">List Of Club</h1>
 <a href="index.php?action=add"><img src="view/user/img/add.png" alt="" style="width:50px; height:50px;" ></a>
-<table class="table table-dark table-hover mt-3">
+<table class="table table-dark mt-3">
     <thead>
         <tr>
             <th>Club Id</th>

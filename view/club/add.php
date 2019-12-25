@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-</head>
-
+</head> -->
+<?php
+    include "dashboard/dasboard.php";
+?>
+&nbsp;&nbsp;
 <body>
     <div class="container">
         <div class="row">
@@ -43,7 +46,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="name"><strong>Description:</strong></label><br>
-                                <textarea name="description"  cols="65" rows="3"></textarea>
+                                <textarea name="description"  cols="47" rows="3"></textarea>
                                 <!-- <input type="textarea" class="form-control" name="descrip" placeholder="Description"> -->
                             </div>
                             <a href="index.php?action=view" class="btn btn-success">Go Back</a>
@@ -57,4 +60,4 @@
     </div>
 </body>
 
-</html>
+<!-- </html> -->

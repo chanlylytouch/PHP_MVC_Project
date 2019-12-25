@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-</head>
-
+</head> -->
+<?php
+    include "dashboard/dasboard.php";
+?>
 <body>
     <div class="container">
         <div class="row">
@@ -67,5 +69,5 @@
         </div>
     </div>
 </body>
-
-</html>
+<!-- 
+</html> -->
