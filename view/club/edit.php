@@ -51,7 +51,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="name"><strong>Description:</strong></label><br>
-                                <textarea name="description"  cols="65" rows="3" value="<?php echo $rows['description']?>"></textarea>
+                                <textarea name="description"  cols="65" rows="3" value="<?php echo $rows['description']?>"class="form-control"></textarea>
                                 <!-- <input type="textarea" class="form-control" name="descrip" placeholder="Description"> -->
                             </div>
                             <a href="index.php?action=view" class="btn btn-success">Go Back</a>

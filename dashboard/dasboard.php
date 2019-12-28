@@ -23,7 +23,7 @@
     -->
       <div class="logo">
         <a href="" class="simple-text logo-normal">
-          Football Club
+          <img src="dashboard/jQuery/image/logo_mvc.png" alt="" class="img-fluid" style="width:200px; height:150px;" >
         </a>
       </div>
       <div class="sidebar-wrapper">
