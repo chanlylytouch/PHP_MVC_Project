@@ -2,19 +2,34 @@
 $data = array();
     flexible_function($data);
     function flexible_function(&$data){
-        $function = 'view';
+        $function = 'login';
         if(isset($_GET['action'])){
             $function = $_GET['action'];
         }
         $function($data);
     }
-    function view(&$data){
-        $data['club_data'] = m_get_data();
-       $data['page'] = 'club/view';
+    function login(&$data){
+       $data['page'] = 'Login/login';
     }
     function add(&$data){
         $data['page'] = 'club/add';
     }
+    function homepage(&$data){
+        session_start();
+        $data['dataUser'] = getUser($_POST);
+        foreach( $data['dataUser'] as $key => $value){
+            if($value['pass'] == $_SESSION['pass'] && $value['user'] == $_SESSION['user']) {
+                $data['page'] = 'club/view';
+                $data['club_data'] = m_get_data();
+            }else{
+                $data['page'] = 'Login/login';
+            }
+        }
+        
+        
+    }
+    
+    
     function add_club(&$data){
         $data_add = m_add($_POST);
         if($data_add){
