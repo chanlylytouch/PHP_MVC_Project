@@ -23,27 +23,27 @@
     -->
       <div class="logo">
         <a href="" class="simple-text logo-normal">
-          <img src="dashboard/jQuery/image/logo_mvc.png" alt="" class="img-fluid" style="width:200px; height:150px;" >
+          <img src="dashboard/jQuery/image/logo.png" alt="" class="img-fluid" style="width:150px; height:150px;" >
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item active">
             <a class="nav-link" href="index.php?action=view">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="#">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>CLUB</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="#">
               <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <p>MEMBER</p>
             </a>
           </li>
          
@@ -67,7 +67,7 @@
            
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">person</i>
                   <p class="d-lg-none d-md-block">
                     Account
@@ -77,7 +77,7 @@
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
+                  <a class="dropdown-item" href="index.php?action=login">Log out</a>
                 </div>
               </li>
             </ul>

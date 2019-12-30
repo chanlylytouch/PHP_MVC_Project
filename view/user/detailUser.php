@@ -1,4 +1,6 @@
-
+<?php
+    include "dashboard/dasboard.php";
+?>
 <div class="cotainer mt-5">
     <div class="row">
         <div class="col-2"></div>
