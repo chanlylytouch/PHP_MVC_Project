@@ -11,9 +11,14 @@ $data = array();
     function login(&$data){
        $data['page'] = 'Login/login';
     }
+    function view(&$data){
+       $data['page'] = 'club/view';
+       $data['club_data'] = m_get_data();
+    }
     function add(&$data){
         $data['page'] = 'club/add';
     }
+    
     function homepage(&$data){
         session_start();
         $data['dataUser'] = getUser($_POST);
@@ -28,8 +33,6 @@ $data = array();
         
         
     }
-    
-    
     function add_club(&$data){
         $data_add = m_add($_POST);
         if($data_add){

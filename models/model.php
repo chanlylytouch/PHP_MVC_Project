@@ -66,7 +66,6 @@ function getUser(){
     include "conection.php";
     $user = $_POST['user'];
     $pass = $_POST['pass'];
-
     $_SESSION['user'] = $user;
     $_SESSION['pass'] = $pass;
     $query = mysqli_query($connection, "SELECT * FROM login");

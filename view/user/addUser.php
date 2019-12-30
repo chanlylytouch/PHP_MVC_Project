@@ -1,3 +1,6 @@
+<?php
+    include "dashboard/dasboard.php";
+?>
 <div class="container mt-5">
     <div class="row">
         <div class="col-3"></div>
