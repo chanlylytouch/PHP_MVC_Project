@@ -7,6 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
   <title>
     Football Club
   </title>
@@ -28,20 +29,22 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php?action=view">
+
+          <li class="nav-item active ">
+          <a class="nav-link" href="index.php?action=home"> 
+
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">
-              <i class="material-icons">person</i>
+          <a class="nav-link" href="index.php?action=view">
+              <i class="material-icons large text-white">person</i>
               <p>CLUB</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">
+          <li class="nav-item  ">
+          <a class="nav-link" href="index2.php?action=viewUser">
               <i class="material-icons">content_paste</i>
               <p>MEMBER</p>
             </a>
@@ -74,8 +77,6 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="index.php?action=login">Log out</a>
                 </div>

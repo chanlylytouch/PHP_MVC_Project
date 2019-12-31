@@ -5,7 +5,7 @@
       <div class="col-4">
       <div class="login-content">
                 <div class="login-form">
-                    <form action="index.php?action=homepage" method="POST">
+                    <form action="index.php?action=home" method="POST">
                     <div class="card bg-info bg-center">
                     <img class="img-fluid mx-auto d-block mt-3" src="dashboard/jQuery/image/logo.png" style="width:100px; height:100px; border-radius:50%; justify-center"> 
                       <!-- <div class="card-header">

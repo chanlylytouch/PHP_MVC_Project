@@ -11,6 +11,10 @@ function m_get_data(){
     return $rows;
 }
 
+
+
+
+
 function m_add($data){
     include 'conection.php';
     if(isset($_POST['create'])){
