@@ -2,7 +2,7 @@
     include "dashboard/dasboard.php";
 ?>
 <h1 class="text-center text-primary">List Of Club</h1>
-<a href="index.php?action=add"><img src="view/user/img/add.png" alt="" style="width:50px; height:50px;" ></a>
+<a href="index.php?action=add"><img src="img/add.png" alt="" style="width:50px; height:50px;" ></a>
 <table class="table table-dark mt-3">
     <thead>
         <tr>
@@ -29,7 +29,7 @@
                     <td><?php echo $rows['age']; ?></td>
                     <td><?php echo $rows['email']; ?></td>
                     <td><?php echo $rows['clubName']; ?></td>
-                    <td><?php echo $rows['description']; ?></td>
+                    <td><?php echo $rows['decription']; ?></td>
                     <td>
                         <a href="index2.php?action=viewUser&id=<?php echo $rows['clubID']; ?>"><i class="material-icons">remove_red_eye</i></a>
                         <a href="index.php?action=edit&id=<?php echo $rows['clubID']; ?>"><i class="material-icons text-success">edit</i></a>

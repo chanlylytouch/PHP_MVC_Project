@@ -24,8 +24,8 @@ function m_add($data){
         $email = $_POST['email'];
         $clubName = $_POST['clubName'];
         $description = $_POST['description'];
-        $query = mysqli_query($connection, "INSERT INTO club(username,gender,age,email,clubName,description)
-         VALUES ('$username','$gender','$age','$email','$clubName','$description')");
+        $query = mysqli_query($connection, "INSERT INTO club(username,age,gender,email,clubName,decription)
+         VALUES ('$username','$age','$gender','$email','$clubName','$description')");
          return $query;
     }
 }
@@ -53,7 +53,7 @@ function m_update(){
         $email = $_POST['email'];
         $clubName = $_POST['clubName'];
         $description = $_POST['description'];
-        $query = mysqli_query($connection, "UPDATE club SET username='$username',gender='$gender',age='$age',email='$email',clubName='$clubName',description='$description' WHERE clubID='$id'");
+        $query = mysqli_query($connection, "UPDATE club SET username='$username',gender='$gender',age='$age',email='$email',clubName='$clubName',decription='$description' WHERE clubID='$id'");
         return $query;
         header("Location: index.php?action=view");
     }

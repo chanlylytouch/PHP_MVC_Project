@@ -31,7 +31,7 @@
         <ul class="nav">
 
           <li class="nav-item active ">
-          <a class="nav-link" href="index.php?action=home"> 
+          <a class="nav-link" href="index.php?action=homepage"> 
 
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
@@ -39,13 +39,13 @@
           </li>
           <li class="nav-item ">
           <a class="nav-link" href="index.php?action=view">
-              <i class="material-icons large text-white">person</i>
+              <i class="material-icons large text-primary">person</i>
               <p>CLUB</p>
             </a>
           </li>
           <li class="nav-item  ">
           <a class="nav-link" href="index2.php?action=viewUser">
-              <i class="material-icons">content_paste</i>
+              <i class="material-icons text-primary">group</i>
               <p>MEMBER</p>
             </a>
           </li>

@@ -44,7 +44,7 @@ function m_add()
         $address = $_POST['address'];
         $club = $_POST['club'];
         $description = $_POST['description'];
-        $query = "INSERT INTO users(username, gender,age,height,role,email, address, clubID ,description)
+        $query = "INSERT INTO users(username, gender,age,height,role,email, address, clubID ,decription)
         VALUES ('$username','$gender','$age','$height','$role','$email','$address','$club','$description')";
         $result = mysqli_query($connection, $query);
         // var_dump($query);
@@ -81,7 +81,7 @@ function m_edit_user()
         $description = $_POST['description'];
         include "conection.php";
         $query = mysqli_query($connection, "UPDATE users SET 
-        username=' $userName',gender='$gender',age='$age', height='$height',role='$role', email='$email', address='$address',description='$description',clubID='$clubId' WHERE userID = '$id'");
+        username=' $userName',gender='$gender',age='$age', height='$height',role='$role', email='$email', address='$address',decription='$description',clubID='$clubId' WHERE userID = '$id'");
         return $query;
     }
 }
