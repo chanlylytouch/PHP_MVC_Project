@@ -15,27 +15,25 @@ $data = array();
        $data['page'] = 'club/view';
        $data['club_data'] = m_get_data();
     }
-    function home(&$data){
-       $data['page'] = 'homepage/homepage';
-        
-    }
+    
     function add(&$data){
         $data['page'] = 'club/add';
     }
     
-    function homepage(&$data){
+    function home(&$data){
         session_start();
         $data['dataUser'] = getUser($_POST);
         foreach( $data['dataUser'] as $value){
             if($value['pass'] == $_SESSION['pass'] && $value['user'] == $_SESSION['user']) {
-                $data['page'] = 'club/view';
+                $data['page'] = 'homepage/homepage';
                 $data['club_data'] = m_get_data();
             }else{
                 $data['page'] = 'Login/login';
             }
-        }
-        
-        
+        }   
+    }
+    function homepage(&$data){
+        $data['page'] = 'homepage/homepage';
     }
     function add_club(&$data){
         $data_add = m_add($_POST);
