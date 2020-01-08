@@ -12,7 +12,7 @@
             <th>Age</th>
             <th>Email</th>
             <th>ClubName</th>
-            <th>Decription</th>
+            <th>Description</th>
             <th>Action</th>
         </tr>
     </thead>
