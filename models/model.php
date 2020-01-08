@@ -1,7 +1,7 @@
 <?php
 function m_get_data(){
     $query = "SELECT * FROM club";
-    include 'conection.php';
+    include 'connection.php';
     $result = mysqli_query($connection,$query);
     if($result && mysqli_num_rows($result) > 0){
         foreach ($result as $row){
@@ -16,7 +16,7 @@ function m_get_data(){
 
 
 function m_add($data){
-    include 'conection.php';
+    include 'connection.php';
     if(isset($_POST['create'])){
         $username = $_POST['username'];
         $gender = $_POST['gender'];
@@ -32,19 +32,19 @@ function m_add($data){
 
 function ms_delete()
 {
-    include 'conection.php';
+    include 'connection.php';
     $id = $_GET['id'];
     $query = mysqli_query($connection, "DELETE FROM club WHERE clubID='$id'");
     return $query;
 }
 function m_edit_club(){
     $id = $_GET['id'];
-    include "conection.php";
+    include "connection.php";
     $query = mysqli_query($connection,"SELECT * FROM club WHERE clubID = '$id'");
     return $query;
 }
 function m_update(){
-    include 'conection.php';
+    include 'connection.php';
     $id = $_GET['id'];
     if(isset($_POST['edit'])){
         $username = $_POST['username'];
@@ -60,14 +60,14 @@ function m_update(){
 }
 function m_detail(){
     $id = $_GET['id'];
-    include "conection.php";
+    include "connection.php";
     $data = mysqli_query($connection,"SELECT * FROM users WHERE userID = '$id'");
 
     return $data;
 }
 
 function getUser(){
-    include "conection.php";
+    include "connection.php";
     $user = $_POST['user'];
     $pass = $_POST['pass'];
     $_SESSION['user'] = $user;
