@@ -1,13 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-</head> -->
 <?php
     include "dashboard/dasboard.php";
 ?>
@@ -18,7 +9,7 @@
             <div class="col-6">
                 <div class="card example z-depth-5">
                     <div class="card-header text-center bg-primary text-light">
-                        <h3>Register</h3>
+                        <h3>Edit Club</h3>
                     </div>
                     <div class="card-body">
                         <?php
@@ -52,7 +43,6 @@
                             <div class="form-group">
                                 <label for="name"><strong>Description:</strong></label><br>
                                 <textarea name="description"  cols="65" rows="3" value="<?php echo $rows['description']?>"class="form-control"></textarea>
-                                <!-- <input type="textarea" class="form-control" name="descrip" placeholder="Description"> -->
                             </div>
                             <a href="index.php?action=view" class="btn btn-success">Go Back</a>
                             <input type="submit" class="btn btn-primary float-right" name="edit" value="Edit">
@@ -69,5 +59,3 @@
         </div>
     </div>
 </body>
-<!-- 
-</html> -->
