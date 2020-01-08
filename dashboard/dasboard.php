@@ -33,8 +33,8 @@
           <li class="nav-item active ">
           <a class="nav-link" href="index.php?action=homepage"> 
 
-              <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <i class="material-icons">home</i>
+              <p>Homepage</p>
             </a>
           </li>
           <li class="nav-item ">
