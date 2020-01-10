@@ -2,7 +2,7 @@
 function m_view()
 {
     include "connection.php";
-    $query = mysqli_query($connection, "SELECT * FROM users");
+    $query = mysqli_query($connection, "SELECT * FROM users us INNER JOIN club cl ON us.clubID = cl.clubID");
     $rows = [];
     if ($query && mysqli_num_rows($query)) {
         foreach ($query as $record) {
