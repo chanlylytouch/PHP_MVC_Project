@@ -17,7 +17,7 @@
                         <th>Height</th>
                         <th>Role</th>
                         <th>Email</th>
-                        <th>Club Id</th>
+                        <th>Club Name</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -35,7 +35,7 @@
                                 <td><?php echo $result['height']; ?></td>
                                 <td><?php echo $result['role']; ?></td>
                                 <td><?php echo $result['email']; ?></td>
-                                <td><?php echo $result['clubID']; ?></td>
+                                <td><?php echo $result['clubName']; ?></td>
                                 <td>
                                     <a href="index2.php?action=editUser&id=<?php echo $result['userID']; ?>"><i class="material-icons text-success">edit</i></a>
                                     <a href="index2.php?action=delete&id=<?php echo $result['userID']; ?>" onclick="return confirm('Are you sure to delete it??')"><i class="material-icons text-danger">delete</i></a>
